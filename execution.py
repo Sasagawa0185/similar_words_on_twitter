@@ -26,7 +26,7 @@ def posting_most_similar_words_on_Twitter():
     # Word2vecで形態素解析の結果をモデル化
     model = maam.word2vec(results)
     
-    # モデルの中でsearch wordと類似した言葉を出力し、体裁を整えて文字列にする。
+    # search wordと類似した言葉を出力し、体裁を整えて文字列にする。
     words = ''
     for i in model.wv.most_similar(positive=[search_word]):
         words += str(i)[1:-20]
