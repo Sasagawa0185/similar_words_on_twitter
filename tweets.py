@@ -17,7 +17,8 @@ class Tweets():
     
     def __init__(self):
         api = Application_Settings
-        self.session = OAuth1Session(api["Consumer Key (API Key)"], api["Consumer Secret (API Secret)"], api["Access Token"], api["Access Token Secret"])  # 認証処理
+         # アカウント認証
+        self.session = OAuth1Session(api["Consumer Key (API Key)"], api["Consumer Secret (API Secret)"], api["Access Token"], api["Access Token Secret"]) 
     
     # textをtwitterに投稿する関数を定義する。
     def posting_on_twitter(self,text):
