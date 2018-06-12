@@ -1,1 +1,1 @@
-# twitter_similar_words
+# similar_words_on_twitter
